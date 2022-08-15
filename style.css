@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --base-color: 240;
+  --bgr-color: hsla(0, 0%, 100%, 1);
+  --font-color: hsla(var(--base-color), 6%, 21%, 1);
+  --font-fm: 'Roboto', sans-serif;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--font-fm); 
+  color: var(--font-color);
+  background: var(--bgr-color);
+  display: grid;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  gap: 19.2rem;
+}
+
+.time {
+  display: flex;
+  font-size: 13.6rem;
+  font-weight: 500;
+  line-height: 14.8rem;
+  margin-bottom: 4.8rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+.buttons button svg path{
+  fill: var(--font-color);
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  border-radius: 2.4rem;
+  
+}
+
+button:active {
+  transform: scale(1.02);
+}
+
+button:hover {
+  cursor:pointer;
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+}
+
+@media (max-width: 900px) {
+  main {
+    display: grid;
+    gap: 4rem;
+  }
+}
+
+@media (min-width: 300px) {
+  main {
+    padding: 2rem;
+  }
+}
+
+
+
+
+
